@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/quantityOrder"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Mô tả"
+        app:layout_constraintEnd_toEndOf="@+id/priceOrder"
+        app:layout_constraintStart_toStartOf="@+id/priceOrder"
+        app:layout_constraintTop_toBottomOf="@+id/priceOrder" />
+
+    <TextView
+        android:id="@+id/priceOrder"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="50.000 đ"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/nameOrder"
+        app:layout_constraintStart_toStartOf="@+id/nameOrder"
+        app:layout_constraintTop_toBottomOf="@+id/nameOrder" />
+
+    <TextView
+        android:id="@+id/nameOrder"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Chuối tây"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageOrder"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageOrder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
